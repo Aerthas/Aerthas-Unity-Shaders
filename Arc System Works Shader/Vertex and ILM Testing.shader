@@ -13,7 +13,7 @@ Shader ".Aerthas/Arc System Works/Vertex and ILM Testing"
 		_VertexBlue("Vertex Blue", Color) = (0,0,1,0)
 		_ILM("ILM", 2D) = "white" {}
 		[Toggle]_NegateILMColors("Negate ILM Colors", Float) = 0
-		[Toggle]_ShowILMRed("Show ILM Red", Float) = 0
+		[Toggle]_ShowILMRed("Show ILM Red", Float) = 1
 		_ILMRed("ILM Red", Color) = (1,0,0,0)
 		[Toggle]_ShowILMGreen("Show ILM Green", Float) = 0
 		_ILMGreen("ILM Green", Color) = (0,1,0,0)
@@ -103,30 +103,30 @@ Shader ".Aerthas/Arc System Works/Vertex and ILM Testing"
 }
 /*ASEBEGIN
 Version=17700
-2144;128;1816;788;2508.781;-417.1434;1;True;True
+2216;135;1624;725;2412.781;-448.6434;1;True;True
 Node;AmplifyShaderEditor.VertexColorNode;1;-1456.052,-312.0725;Inherit;False;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.ColorNode;36;-994.2482,363.4127;Inherit;False;Property;_VertexBlue;Vertex Blue;6;0;Create;True;0;0;False;0;0,0,1,0;0,0,1,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.ColorNode;45;-1083.675,866.7972;Inherit;False;Property;_ILMRed;ILM Red;10;0;Create;True;0;0;False;0;1,0,0,0;1,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.ColorNode;43;-1075.816,1331.33;Inherit;False;Property;_ILMBlue;ILM Blue;14;0;Create;True;0;0;False;0;0,0,1,0;0,0,1,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.ColorNode;30;-1002.107,-101.1198;Inherit;False;Property;_VertexRed;Vertex Red;2;0;Create;True;0;0;False;0;1,0,0,0;1,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SamplerNode;42;-1479.882,721.5238;Inherit;True;Property;_ILM;ILM;7;0;Create;True;0;0;False;0;-1;None;a3305d71b40ac3a47a0a610eb6f22383;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;6;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SamplerNode;42;-1479.882,721.5238;Inherit;True;Property;_ILM;ILM;7;0;Create;True;0;0;False;0;-1;None;62f79debd5fec0f42b98ed682a2b5b33;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;6;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.ColorNode;32;-990.3479,106.0129;Inherit;False;Property;_VertexGreen;Vertex Green;4;0;Create;True;0;0;False;0;0,1,0,0;0,1,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.ColorNode;44;-1071.916,1073.93;Inherit;False;Property;_ILMGreen;ILM Green;12;0;Create;True;0;0;False;0;0,1,0,0;0,1,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.ColorNode;57;-1045.016,1584.738;Inherit;False;Property;_ILMAlpha;ILM Alpha;16;0;Create;True;0;0;False;0;1,1,1,0;1,1,1,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SimpleMultiplyOpNode;55;-753.9761,1461.473;Inherit;False;2;2;0;FLOAT;0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.SimpleMultiplyOpNode;48;-791.635,751.5323;Inherit;False;2;2;0;FLOAT;0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.SimpleMultiplyOpNode;31;-710.0674,-216.3847;Inherit;False;2;2;0;FLOAT;0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.SimpleMultiplyOpNode;46;-783.7762,1216.065;Inherit;False;2;2;0;FLOAT;0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.SimpleMultiplyOpNode;37;-702.2086,248.148;Inherit;False;2;2;0;FLOAT;0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;47;-779.8759,958.665;Inherit;False;2;2;0;FLOAT;0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;37;-702.2086,248.148;Inherit;False;2;2;0;FLOAT;0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;46;-783.7762,1216.065;Inherit;False;2;2;0;FLOAT;0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;33;-698.3083,-9.251968;Inherit;False;2;2;0;FLOAT;0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.ToggleSwitchNode;35;-424.4283,212.1805;Inherit;False;Property;_ShowVertexBlue;Show Vertex Blue;5;0;Create;True;0;0;False;0;0;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.ToggleSwitchNode;56;-476.1958,1425.506;Inherit;False;Property;_ShowILMAlpha;Show ILM Alpha;15;0;Create;True;0;0;False;0;0;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.ToggleSwitchNode;49;-503.3957,952.5974;Inherit;False;Property;_ShowILMGreen;Show ILM Green;11;0;Create;True;0;0;False;0;0;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.ToggleSwitchNode;27;-377.83,-151.7263;Inherit;False;Property;_ShowVertexRed;Show Vertex Red;1;0;Create;True;0;0;False;0;0;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.ToggleSwitchNode;51;-459.3976,816.1907;Inherit;False;Property;_ShowILMRed;Show ILM Red;9;0;Create;True;0;0;False;0;0;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.ToggleSwitchNode;34;-421.8281,-15.31957;Inherit;False;Property;_ShowVertexGreen;Show Vertex Green;3;0;Create;True;0;0;False;0;0;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;48;-791.635,751.5323;Inherit;False;2;2;0;FLOAT;0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;55;-753.9761,1461.473;Inherit;False;2;2;0;FLOAT;0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;31;-710.0674,-216.3847;Inherit;False;2;2;0;FLOAT;0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.ToggleSwitchNode;50;-505.9959,1180.098;Inherit;False;Property;_ShowILMBlue;Show ILM Blue;13;0;Create;True;0;0;False;0;0;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.ToggleSwitchNode;51;-459.3976,816.1907;Inherit;False;Property;_ShowILMRed;Show ILM Red;9;0;Create;True;0;0;False;0;1;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.ToggleSwitchNode;27;-377.83,-151.7263;Inherit;False;Property;_ShowVertexRed;Show Vertex Red;1;0;Create;True;0;0;False;0;0;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.ToggleSwitchNode;34;-421.8281,-15.31957;Inherit;False;Property;_ShowVertexGreen;Show Vertex Green;3;0;Create;True;0;0;False;0;0;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.ToggleSwitchNode;56;-476.1958,1425.506;Inherit;False;Property;_ShowILMAlpha;Show ILM Alpha;15;0;Create;True;0;0;False;0;0;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.ToggleSwitchNode;35;-424.4283,212.1805;Inherit;False;Property;_ShowVertexBlue;Show Vertex Blue;5;0;Create;True;0;0;False;0;0;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.ToggleSwitchNode;49;-503.3957,952.5974;Inherit;False;Property;_ShowILMGreen;Show ILM Green;11;0;Create;True;0;0;False;0;0;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;52;-234.8976,851.5907;Inherit;False;4;4;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;COLOR;0,0,0,0;False;3;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;28;-159.83,-152.7263;Inherit;False;3;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.OneMinusNode;53;-82.19656,920.0974;Inherit;False;1;0;COLOR;0,0,0,0;False;1;COLOR;0
@@ -135,27 +135,27 @@ Node;AmplifyShaderEditor.ToggleSwitchNode;54;67.30347,806.9974;Inherit;False;Pro
 Node;AmplifyShaderEditor.ToggleSwitchNode;38;148.8711,-160.9196;Inherit;False;Property;_NegateVertexColors;Negate Vertex Colors;0;0;Create;True;0;0;False;0;0;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;58;638.2355,530.6969;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;1008.198,264.7511;Float;False;True;-1;2;ASEMaterialInspector;0;0;CustomLighting;.Aerthas/Arc System Works/Vertex and ILM Testing;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;Back;0;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Opaque;0.5;True;True;0;False;Opaque;;Geometry;All;14;all;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;False;2;15;10;25;False;0.5;True;0;0;False;-1;0;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;-1;-1;-1;-1;0;False;0;0;False;-1;-1;0;False;-1;0;0;0;False;0.1;False;-1;0;False;-1;15;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
-WireConnection;55;0;42;4
-WireConnection;55;1;57;0
-WireConnection;48;0;42;1
-WireConnection;48;1;45;0
-WireConnection;31;0;1;1
-WireConnection;31;1;30;0
-WireConnection;46;0;42;3
-WireConnection;46;1;43;0
-WireConnection;37;0;1;3
-WireConnection;37;1;36;0
 WireConnection;47;0;42;2
 WireConnection;47;1;44;0
+WireConnection;37;0;1;3
+WireConnection;37;1;36;0
+WireConnection;46;0;42;3
+WireConnection;46;1;43;0
 WireConnection;33;0;1;2
 WireConnection;33;1;32;0
-WireConnection;35;1;37;0
-WireConnection;56;1;55;0
-WireConnection;49;1;47;0
-WireConnection;27;1;31;0
-WireConnection;51;1;48;0
-WireConnection;34;1;33;0
+WireConnection;48;0;42;1
+WireConnection;48;1;45;0
+WireConnection;55;0;42;4
+WireConnection;55;1;57;0
+WireConnection;31;0;1;1
+WireConnection;31;1;30;0
 WireConnection;50;1;46;0
+WireConnection;51;1;48;0
+WireConnection;27;1;31;0
+WireConnection;34;1;33;0
+WireConnection;56;1;55;0
+WireConnection;35;1;37;0
+WireConnection;49;1;47;0
 WireConnection;52;0;51;0
 WireConnection;52;1;49;0
 WireConnection;52;2;50;0
@@ -173,4 +173,4 @@ WireConnection;58;0;38;0
 WireConnection;58;1;54;0
 WireConnection;0;2;58;0
 ASEEND*/
-//CHKSM=75009FFD4D6AB4B5CEE6528853C00DF6B2E96D36
+//CHKSM=B88B36AFAF2363DA53F13D0B9E8F41BCA18000A3
