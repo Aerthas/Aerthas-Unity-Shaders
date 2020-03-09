@@ -10,7 +10,7 @@ Emulates the look of the FABULOUS Arc System Works games.<br/><br/>
 
 ### [Guilty Gear Edition](https://github.com/Aerthas/Aerthas-Unity-Shaders/blob/master/Arc%20System%20Works%20Shader/Arc%20System%20Works%20-%20Merged%20Light%20-%20Guilty%20Gear%20Edition.shader)<br/><br/>
 Modified version of the shader to work with specifically Guilty Gear models<br/><br/>
-![](https://i.imgur.com/RgCRe7D.png)<br/><br/>
+![](https://i.imgur.com/xeJuP74.png)<br/><br/>
 [See it in motion!](https://i.imgur.com/nLtMTyF.mp4)<br/><br/>
 *Shader will utilize the world lighting if there is a world light, or will switch to its own internal shading automatically if there isn't one.*
 
