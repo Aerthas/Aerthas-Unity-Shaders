@@ -6,7 +6,7 @@
 ![OldVsNew](https://i.imgur.com/NUNoAfp.png)<br/><br/>
 ![OldVsNew](https://i.imgur.com/Q1A18FX.png)<br/><br/>
 [See it in motion!](https://i.imgur.com/3gExH4Y.mp4)<br/><br/>
-Emulates the look of the FABULOUS Arc System Works games.<br/><br/>
+Emulates the look of the FABULOUS Arc System Works games.
 
 ### [Guilty Gear Edition](https://github.com/Aerthas/Aerthas-Unity-Shaders/blob/master/Arc%20System%20Works%20Shader/Arc%20System%20Works%20-%20Merged%20Light%20-%20Guilty%20Gear%20Edition.shader)<br/><br/>
 Modified version of the shader to work with specifically Guilty Gear models<br/><br/>
