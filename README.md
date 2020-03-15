@@ -6,11 +6,14 @@
 ![OldVsNew](https://i.imgur.com/7IvsDAm.png)<br/><br/>
 [See it in motion!](https://i.imgur.com/XgwrapH.mp4)<br/><br/>
 Emulates the look of the FABULOUS Arc System Works games.<br/><br/>
-Confirmed games this shader will work with:<br/><br/>
+Confirmed games this shader will work with:
 * Dragon Ball: FighterZ
 * GUILTY GEAR Xrd REV 2
 * GUILTY GEAR Xrd -SIGN-
 * Granblue Fantasy Versus
+
+Unconfirmed games that there is a 99.999% chance it will work with:
+* Every other Arc System Works game that I just don't have
 
 ## [Comic Book Shader](https://github.com/Aerthas/Aerthas-Unity-Shaders/blob/master/Misc/Comic%20Book%20Dot%20Shadows.shader)
 ![](https://i.imgur.com/krJmn8f.png)<br/><br/>
