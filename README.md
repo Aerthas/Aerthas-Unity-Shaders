@@ -3,8 +3,8 @@
  
  
 ## [Arc System Works Shader - Completely remade from scratch!](https://github.com/Aerthas/Aerthas-Unity-Shaders/blob/master/Arc%20System%20Works%20Shader/Arc%20System%20Works%20-%20Merged%20Light.shader)
-![OldVsNew](https://i.imgur.com/V2QNcpi.png)<br/><br/>
-[See it in motion!](https://i.imgur.com/3gExH4Y.mp4)<br/><br/>
+![OldVsNew](https://i.imgur.com/7IvsDAm.png)<br/><br/>
+[See it in motion!](https://i.imgur.com/XgwrapH.mp4)<br/><br/>
 Emulates the look of the FABULOUS Arc System Works games.<br/><br/>
 Confirmed games this shader will work with:<br/><br/>
 * Dragon Ball: FighterZ
