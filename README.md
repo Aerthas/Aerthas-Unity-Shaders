@@ -8,10 +8,10 @@
 [See it in motion!](https://i.imgur.com/3gExH4Y.mp4)<br/><br/>
 Emulates the look of the FABULOUS Arc System Works games.<br/><br/>
 
-### [Guilty Gear Edition](https://github.com/Aerthas/Aerthas-Unity-Shaders/blob/master/Arc%20System%20Works%20Shader/Arc%20System%20Works%20-%20Merged%20Light%20-%20Guilty%20Gear%20Edition.shader)<br/><br/>
+## [Guilty Gear Edition](https://github.com/Aerthas/Aerthas-Unity-Shaders/blob/master/Arc%20System%20Works%20Shader/Arc%20System%20Works%20-%20Merged%20Light%20-%20Guilty%20Gear%20Edition.shader)
 Modified version of the shader to work with specifically Guilty Gear models<br/><br/>
-![](https://i.imgur.com/RgCRe7D.png)<br/><br/>
-[See it in motion!](https://i.imgur.com/nLtMTyF.mp4)<br/><br/>
+![](https://i.imgur.com/b46r6cO.png)<br/><br/>
+[See it in motion!](https://i.imgur.com/pE659nH.mp4)<br/><br/>
 *Shader will utilize the world lighting if there is a world light, or will switch to its own internal shading automatically if there isn't one.*
 
 ## [Comic Book Shader](https://github.com/Aerthas/Aerthas-Unity-Shaders/blob/master/Misc/Comic%20Book%20Dot%20Shadows.shader)
