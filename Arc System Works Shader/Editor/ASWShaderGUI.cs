@@ -48,11 +48,12 @@ public class ASWShaderGUI : ShaderGUI
 	    MaterialProperty _OutlineDiffuseMultEnable = ShaderGUI.FindProperty("_OutlineDiffuseMultEnable",properties);
 	    MaterialProperty _FakeLightColor = ShaderGUI.FindProperty("_FakeLightColor",properties);
 	    MaterialProperty _FakeLightDir = ShaderGUI.FindProperty("_FakeLightDir",properties);
-	    MaterialProperty _LightLayer1 = ShaderGUI.FindProperty("_LightLayer1",properties);
-	    MaterialProperty _LightLayer1Fuzziness = ShaderGUI.FindProperty("_LightLayer1Fuzziness",properties);
-	    MaterialProperty _LightLayer2 = ShaderGUI.FindProperty("_LightLayer2",properties);
-	    MaterialProperty _LightLayer2Fuzziness = ShaderGUI.FindProperty("_LightLayer2Fuzziness",properties);
-	    MaterialProperty _LightLayer2Intensity = ShaderGUI.FindProperty("_LightLayer2Intensity",properties);
+	    MaterialProperty _ShadowLayer1Push = ShaderGUI.FindProperty("_ShadowLayer1Push",properties);
+	    MaterialProperty _ShadowLayer1Fuzziness = ShaderGUI.FindProperty("_ShadowLayer1Fuzziness",properties);
+	    MaterialProperty _ShadowLayer1Intensity = ShaderGUI.FindProperty("_ShadowLayer1Intensity",properties);
+	    MaterialProperty _ShadowLayer2Push = ShaderGUI.FindProperty("_ShadowLayer2Push",properties);
+	    MaterialProperty _ShadowLayer2Fuzziness = ShaderGUI.FindProperty("_ShadowLayer2Fuzziness",properties);
+	    MaterialProperty _ShadowLayer2Intensity = ShaderGUI.FindProperty("_ShadowLayer2Intensity",properties);
 	    MaterialProperty _ILMLayer1 = ShaderGUI.FindProperty("_ILMLayer1",properties);
 	    MaterialProperty _ILMLayer2 = ShaderGUI.FindProperty("_ILMLayer2",properties);
 	    MaterialProperty _VertexLayer1 = ShaderGUI.FindProperty("_VertexLayer1",properties);
@@ -105,11 +106,15 @@ public class ASWShaderGUI : ShaderGUI
 			materialEditor.ShaderProperty(_FakeLightColor, _FakeLightColor.displayName);
 			materialEditor.ShaderProperty(_FakeLightDir, _FakeLightDir.displayName);
 		}
-		materialEditor.ShaderProperty(_LightLayer1, _LightLayer1.displayName);
-		materialEditor.ShaderProperty(_LightLayer1Fuzziness, _LightLayer1Fuzziness.displayName);
-		materialEditor.ShaderProperty(_LightLayer2, _LightLayer2.displayName);
-		materialEditor.ShaderProperty(_LightLayer2Fuzziness, _LightLayer2Fuzziness.displayName);
-		materialEditor.ShaderProperty(_LightLayer2Intensity, _LightLayer2Intensity.displayName);
+		materialEditor.ShaderProperty(_ShadowBrightness, _ShadowBrightness.displayName);
+		
+		materialEditor.ShaderProperty(_ShadowLayer1Push, _ShadowLayer1Push.displayName);
+		materialEditor.ShaderProperty(_ShadowLayer1Fuzziness, _ShadowLayer1Fuzziness.displayName);
+		materialEditor.ShaderProperty(_ShadowLayer1Intensity, _ShadowLayer1Intensity.displayName);
+
+		materialEditor.ShaderProperty(_ShadowLayer2Push, _ShadowLayer2Push.displayName);
+		materialEditor.ShaderProperty(_ShadowLayer2Fuzziness, _ShadowLayer2Fuzziness.displayName);
+		materialEditor.ShaderProperty(_ShadowLayer2Intensity, _ShadowLayer2Intensity.displayName);
 
 		materialEditor.ShaderProperty(_ILMLayer1, _ILMLayer1.displayName);
 		materialEditor.ShaderProperty(_ILMLayer2, _ILMLayer2.displayName);
@@ -117,7 +122,6 @@ public class ASWShaderGUI : ShaderGUI
 		materialEditor.ShaderProperty(_VertexLayer1, _VertexLayer1.displayName);
 		materialEditor.ShaderProperty(_VertexLayer2, _VertexLayer2.displayName);
 
-		materialEditor.ShaderProperty(_ShadowBrightness, _ShadowBrightness.displayName);
 
 		//Specular Settings
 		GUILayout.Label(Styles.specularSettings, EditorStyles.boldLabel);
