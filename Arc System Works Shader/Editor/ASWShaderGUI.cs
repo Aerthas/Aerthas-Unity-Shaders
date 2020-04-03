@@ -5,12 +5,6 @@ public class ASWShaderGUI : ShaderGUI
 {
 	private static class Styles
     {
-    	public static string globalSettings = "Global Settings";
-        public static string mainTextures = "Main Textures";
-        public static string outline = "Outline Settings";
-        public static string lightLayerSettings = "Light Settings";
-        public static string specularSettings = "Specular Settings";
-        public static string highlightFresnelSettings = "Highlight Fresnel Settings";
         public static GUIContent baseText = new GUIContent("Base Texture", "[Character Indentifier]_Base");
         public static GUIContent sssText = new GUIContent("SSS Texture", "[Character Indentifier]_SSS");
         public static GUIContent ilmText = new GUIContent("ILM Texture", "[Character Indentifier]_ILM");
@@ -21,6 +15,7 @@ public class ASWShaderGUI : ShaderGUI
     bool showOutlineSettings = false;
     bool showFakeLightSettings = false;
     bool showSpecularSettings = false;
+    bool showCredits = false;
 
     public override void OnGUI (MaterialEditor materialEditor, MaterialProperty[] properties)
     {
@@ -61,8 +56,8 @@ public class ASWShaderGUI : ShaderGUI
 	    MaterialProperty _ShadowBrightness = ShaderGUI.FindProperty("_ShadowBrightness",properties);
 	    MaterialProperty _SpecularSize = ShaderGUI.FindProperty("_SpecularSize",properties);
 	    MaterialProperty _SpecularIntensity = ShaderGUI.FindProperty("_SpecularIntensity",properties);
-	    MaterialProperty _SpecularFuzzySolid = ShaderGUI.FindProperty("_SpecularFuzzySolid",properties);
-	    MaterialProperty _EnableFresnelWORKINPROGRESS = ShaderGUI.FindProperty("_EnableFresnelWORKINPROGRESS",properties);
+	    MaterialProperty _SpecularFuzzy = ShaderGUI.FindProperty("_SpecularFuzzy",properties);
+	    MaterialProperty _EnableFresnelHighlight = ShaderGUI.FindProperty("_EnableFresnelHighlight",properties);
 	    MaterialProperty _DarkHighlightMult = ShaderGUI.FindProperty("_DarkHighlightMult",properties);
 	    MaterialProperty _HighlightPower = ShaderGUI.FindProperty("_HighlightPower",properties);
 	    MaterialProperty _HighlightFreselFuzzy = ShaderGUI.FindProperty("_HighlightFreselFuzzy",properties);
@@ -73,12 +68,12 @@ public class ASWShaderGUI : ShaderGUI
 	    MaterialProperty _GranblueFresnelPower = ShaderGUI.FindProperty("_GranblueFresnelPower",properties);
 
         // Global Properties
-        GUILayout.Label(Styles.globalSettings, EditorStyles.boldLabel);
+        GUILayout.Label("Global Settings", EditorStyles.boldLabel);
         materialEditor.ShaderProperty(_ForceFakeLight, _ForceFakeLight.displayName);
         materialEditor.ShaderProperty(_ENABLETHISFORGUILTYGEAR, _ENABLETHISFORGUILTYGEAR.displayName);
 
         // Primary properties
-        GUILayout.Label(Styles.mainTextures, EditorStyles.boldLabel);
+        GUILayout.Label("Main Textures", EditorStyles.boldLabel);
 
         materialEditor.TexturePropertySingleLine(Styles.baseText, _Base);
         materialEditor.TexturePropertySingleLine(Styles.sssText, _SSS);
@@ -91,16 +86,21 @@ public class ASWShaderGUI : ShaderGUI
         }
         
         // Outline properties
-        GUILayout.Label(Styles.outline, EditorStyles.boldLabel);
+        GUILayout.Label("Outline Settings", EditorStyles.boldLabel);
 		showOutlineSettings = GUILayout.Toggle(showOutlineSettings, "Show Outline Settings");
 		if( showOutlineSettings == true ) {
 	        materialEditor.ShaderProperty(_OutlineColor, _OutlineColor.displayName);
 	        materialEditor.ShaderProperty(_OutlineThickness, _OutlineThickness.displayName);
 	        materialEditor.ShaderProperty(_OutlineDiffuseMultEnable, _OutlineDiffuseMultEnable.displayName);
+	        if (GUILayout.Button("How to properly set up your outlines") == true)
+	        {
+	        	Application.OpenURL("https://www.youtube.com/watch?v=SYS3XlRmDaA");
+	            Debug.Log("Opened external url: https://www.youtube.com/watch?v=SYS3XlRmDaA");
+	        }
 	    }
 
 	    //Light Layer Proprties
-        GUILayout.Label(Styles.lightLayerSettings, EditorStyles.boldLabel);
+        GUILayout.Label("Light Settings", EditorStyles.boldLabel);
 		showFakeLightSettings = GUILayout.Toggle(showFakeLightSettings, "Show Fake Light Settings");
 		if( showFakeLightSettings == true ){
 			materialEditor.ShaderProperty(_FakeLightColor, _FakeLightColor.displayName);
@@ -124,17 +124,17 @@ public class ASWShaderGUI : ShaderGUI
 
 
 		//Specular Settings
-		GUILayout.Label(Styles.specularSettings, EditorStyles.boldLabel);
+		GUILayout.Label("Specular Settings", EditorStyles.boldLabel);
 		showSpecularSettings = GUILayout.Toggle(showSpecularSettings, "Show Specular Settings");
 		if( showSpecularSettings == true ){
-			materialEditor.ShaderProperty(_SpecularSize, _SpecularSize.displayName);
 			materialEditor.ShaderProperty(_SpecularIntensity, _SpecularIntensity.displayName);
-			materialEditor.ShaderProperty(_SpecularFuzzySolid, _SpecularFuzzySolid.displayName);
+			materialEditor.ShaderProperty(_SpecularSize, _SpecularSize.displayName);
+			materialEditor.ShaderProperty(_SpecularFuzzy, _SpecularFuzzy.displayName);
 		}
 
-		GUILayout.Label(Styles.highlightFresnelSettings, EditorStyles.boldLabel);
-        materialEditor.ShaderProperty(_EnableFresnelWORKINPROGRESS, _EnableFresnelWORKINPROGRESS.displayName);
-		if ( _EnableFresnelWORKINPROGRESS.floatValue == 1){
+		GUILayout.Label("Highlight Fresnel Settings", EditorStyles.boldLabel);
+        materialEditor.ShaderProperty(_EnableFresnelHighlight, _EnableFresnelHighlight.displayName);
+		if ( _EnableFresnelHighlight.floatValue == 1){
 			materialEditor.ShaderProperty(_DarkHighlightMult, _DarkHighlightMult.displayName);
 			materialEditor.ShaderProperty(_HighlightPower, _HighlightPower.displayName);
 			materialEditor.ShaderProperty(_HighlightFreselFuzzy, _HighlightFreselFuzzy.displayName);
@@ -146,5 +146,58 @@ public class ASWShaderGUI : ShaderGUI
 			materialEditor.ShaderProperty(_GranblueFresnelScale, _GranblueFresnelScale.displayName);
 			materialEditor.ShaderProperty(_GranblueFresnelPower, _GranblueFresnelPower.displayName);
 		}
+
+		GUILayout.Label("Credits", EditorStyles.boldLabel);
+		showCredits = GUILayout.Toggle(showCredits,"Show credits");
+		if ( showCredits == true){
+			if (GUILayout.Button("My Discord about about this shader") == true)
+	        {
+	        	Application.OpenURL("https://discord.gg/EkCSZg8");
+	            Debug.Log("Opened external url: https://discord.gg/EkCSZg8");
+	        }
+			GUILayout.Label("»Thanks to Shamwow for the absolute first guide on the absolute first initial version of the shader.\n\n»Thanks to VCD/Velon for his constant riding of me to keep working on my shader\n\n»Thanks to Nars290 for his constant positivity and assistance with testing and debugging\n\n»And thanks to EdwardsVSGaming for taking an old version of my shader and editing it a bit, claiming the entire thing as his own without credit to me, and using deceptive comparisons between that shader and mine forcing me to get off my lazy streak and actually work on my shader again. *clap* *clap* Good job.", EditorStyles.textArea);
+		}
+    }
+}
+
+public class ASWOutlineGUI : ShaderGUI
+{
+	private static class Styles
+    {
+        public static GUIContent baseText = new GUIContent("Base Texture", "[Character Indentifier]_Base");
+    }
+
+    public override void OnGUI (MaterialEditor materialEditor, MaterialProperty[] properties)
+    {
+    	//foreach (MaterialProperty property in properties)
+        	//materialEditor.ShaderProperty(property, property.displayName);
+		// Renders the default GUI
+        //base.OnGUI (materialEditor, properties);
+
+        //FindProperties(properties);              // Find properties
+        EditorGUIUtility.labelWidth = 300f;   // Use default labelWidth
+        EditorGUIUtility.fieldWidth = 50f;   // Use default labelWidth
+
+	    MaterialProperty _ENABLETHISFORGUILTYGEAR = ShaderGUI.FindProperty("_ENABLETHISFORGUILTYGEAR",properties);
+	    MaterialProperty _OutlineColor = ShaderGUI.FindProperty("_OutlineColor",properties);
+	    MaterialProperty _OutlineThickness = ShaderGUI.FindProperty("_OutlineThickness",properties);
+	    MaterialProperty _EnableBaseColorMult = ShaderGUI.FindProperty("_EnableBaseColorMult",properties);
+	    MaterialProperty _Base = ShaderGUI.FindProperty("_Base",properties);
+        
+        materialEditor.ShaderProperty(_ENABLETHISFORGUILTYGEAR, _ENABLETHISFORGUILTYGEAR.displayName);
+	    if (GUILayout.Button("How to properly set up your outlines") == true)
+        {
+        	Application.OpenURL("https://www.youtube.com/watch?v=SYS3XlRmDaA");
+            Debug.Log("Opened external url: https://www.youtube.com/watch?v=SYS3XlRmDaA");
+        }
+
+        // Outline properties
+        GUILayout.Label("Outline Settings", EditorStyles.boldLabel);
+        materialEditor.ShaderProperty(_OutlineThickness, _OutlineThickness.displayName);
+        materialEditor.ShaderProperty(_OutlineColor, _OutlineColor.displayName);
+        materialEditor.ShaderProperty(_EnableBaseColorMult, _EnableBaseColorMult.displayName);
+		if( _EnableBaseColorMult.floatValue == 1 ) {
+	        materialEditor.ShaderProperty(_Base, _Base.displayName);
+	    }
     }
 }
