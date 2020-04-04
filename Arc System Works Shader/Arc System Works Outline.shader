@@ -84,7 +84,7 @@ Shader ".Aerthas/Arc System Works/Outline"
 }
 /*ASEBEGIN
 Version=17800
--1342;83;1187;718;868.1329;326.2111;1;True;True
+-1596;88;1529;880;1041.133;406.2111;1;True;True
 Node;AmplifyShaderEditor.CommentaryNode;9;-1811.615,-536.6453;Inherit;False;978.1387;333.6884;Vertex Color Information;4;13;12;11;10;;1,1,1,1;0;0
 Node;AmplifyShaderEditor.VertexColorNode;10;-1765.708,-423.6843;Inherit;False;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.DynamicAppendNode;11;-1515.769,-369.1522;Inherit;False;FLOAT4;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT4;0
@@ -121,4 +121,4 @@ WireConnection;18;1;21;0
 WireConnection;0;13;18;0
 WireConnection;0;11;3;0
 ASEEND*/
-//CHKSM=428E3D782AA7AE2E00CD781D768A9BB4FBB32554
+//CHKSM=8B4B7FC660283949E97AB4BB6FE0D0B45204B73D
