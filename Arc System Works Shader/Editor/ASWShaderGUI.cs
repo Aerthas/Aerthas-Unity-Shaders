@@ -178,12 +178,12 @@ public class ASWShaderGUI : ShaderGUI
 			GUILayout.Label("Credits", EditorStyles.boldLabel);
 			showCredits = GUILayout.Toggle(showCredits,"Show credits");
 			if ( showCredits == true){
-				if (GUILayout.Button("My Discord about about this shader") == true)
+				if (GUILayout.Button("My Discord about this shader") == true)
 		        {
 		        	Application.OpenURL("https://discord.gg/EkCSZg8");
 		            Debug.Log("Opened external url: https://discord.gg/EkCSZg8");
 		        }
-				GUILayout.Label("»Thanks to Shamwow for the absolute first guide on the absolute first initial version of the shader.\n\n»Thanks to VCD/Velon for his constant riding of me to keep working on my shader\n\n»Thanks to Nars290 for his constant positivity and assistance with testing and debugging\n\n»Thanks to EdwardsVSGaming for taking an old version of my shader, editing it a small ammount, claiming the entire thing as his own without credit to me, and using deceptive comparisons between that shader and mine forcing me to get off my lazy streak and actually work on my shader again. *clap* *clap* Good job.", EditorStyles.textArea);
+				GUILayout.Label("»Thanks to Shamwow for the absolute first guide on the absolute first initial version of the shader.\n\n»Thanks to VCD/Velon for his constant riding of me to keep working on my shader\n\n»Thanks to Nars290 for his constant positivity and assistance with testing and debugging\n\n»Thanks to EdwardsVSGaming for taking an old version of my shader, editing it a small ammount, claiming the entire thing as his own without credit to me, and using deceptive comparisons between that shader and mine forcing me to get off my lazy streak and actually work on my shader again. *clap* *clap* Good job.\n\n»Dulce Suenos for being a grammar nazi.", EditorStyles.textArea);
 			}
 		}
     }
