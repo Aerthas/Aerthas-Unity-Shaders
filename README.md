@@ -3,6 +3,7 @@
  
  
 ## [Arc System Works Shader - DISCLAIMER BELOW](https://github.com/Aerthas/Aerthas-Unity-Shaders/blob/master/Arc%20System%20Works%20Shader/Arc%20System%20Works%20-%20Merged%20Light.shader)
+![Example of a render using the shader!](https://i.imgur.com/0YpFNJs.png)<br/><br/>
 ![Example of a render using the shader!](https://i.imgur.com/ABRJ10x.png)<br/><br/>
 [See it in motion!](https://i.imgur.com/XgwrapH.mp4)<br/><br/>
 Emulates the look of the FABULOUS Arc System Works games.<br/><br/>
