@@ -1,8 +1,8 @@
 # Aerthas Unity Shaders
  Bunch of the shaders I make for Unity
- 
- 
-## [Arc System Works Shader - DISCLAIMER BELOW](https://github.com/Aerthas/Aerthas-Unity-Shaders/blob/master/Arc%20System%20Works%20Shader/Arc%20System%20Works%20-%20Merged%20Light.shader)
+
+## Arc System Works Shader - DISCLAIMER BELOW
+## [If you are unfamiliar with GitHub, click here to download](https://github.com/Aerthas/Aerthas-Unity-Shaders/releases)
 ![Example of a render using the shader!](https://i.imgur.com/0YpFNJs.png)<br/><br/>
 ![Example of a render using the shader!](https://i.imgur.com/ABRJ10x.png)<br/><br/>
 [See it in motion!](https://i.imgur.com/XgwrapH.mp4)<br/><br/>
