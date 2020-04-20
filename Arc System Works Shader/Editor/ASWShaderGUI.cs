@@ -126,7 +126,7 @@ public class ASWShaderGUI : ShaderGUI
 	public static string[] presets;
 	int popupIndex = 0;
 	string presetText = "";
-	string dirPath = "Assets/Shaders/Aerthas-Unity-Shaders/Arc System Works Shader/Presets/";
+	string dirPath = "Assets/Aerthas-Unity-Shaders/Arc System Works Shader/Presets/";
 
     public override void OnGUI(MaterialEditor me, MaterialProperty[] props)
     {
