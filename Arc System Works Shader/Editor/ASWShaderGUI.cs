@@ -1,7 +1,6 @@
 using UnityEditor;
 using UnityEngine;
 using System.Collections.Generic;
-using System;
 using System.IO;
 using System.Reflection;
  
@@ -82,7 +81,7 @@ public class ASWShaderGUI : ShaderGUI
     MaterialProperty _BaseSSSAlphaSwap = null;
     MaterialProperty _BaseSSSAlphaColor = null;
 
-    public static Dictionary<Material, Toggles> foldouts = new Dictionary<Material, Toggles>();
+    public static Dictionary<Material, Toggles > foldouts = new Dictionary<Material, Toggles>();
     Toggles toggles = new Toggles(
 		new bool[] {
 			false, // Global
@@ -100,7 +99,7 @@ public class ASWShaderGUI : ShaderGUI
 				false,
 				false,
 			false, // Credits
-			false, // Presets
+			false // Presets
 		},
 		new string[] {
 			"Global Settings", 
