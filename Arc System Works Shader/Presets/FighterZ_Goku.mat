@@ -78,7 +78,7 @@ Material:
     - _EnableFresnelWORKINPROGRESS: 0
     - _EnableGranblueBlackFresnel: 0
     - _EnableMetalMatcap: 0
-    - _EnableOutline: 0
+    - _EnableOutline: 1
     - _FADE: 0
     - _FADING: 0
     - _FakeLightDirX: 35
@@ -125,8 +125,9 @@ Material:
     - _MetalAIntensity: 1
     - _MetalBIntensity: 5
     - _MetalEnable: 0
+    - _OutlineColorIntensity: 1
     - _OutlineDiffuseMultEnable: 0
-    - _OutlineThickness: 1
+    - _OutlineThickness: 0.5
     - _OutlineWidth: 1
     - _OutlineWidth1: 0
     - _PIXELSNAP: 0
