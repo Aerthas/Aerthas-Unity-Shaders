@@ -94,8 +94,8 @@ public class ASWShaderGUI : ShaderGUI
     MaterialProperty _BaseSSSAlphaSwap = null;
     MaterialProperty _BaseSSSAlphaColor = null;
 
-    public static Dictionary<Material, Toggles > foldouts = new Dictionary<Material, Toggles>();
-    Toggles toggles = new Toggles(
+    public static Dictionary<Material, ASWToggles > foldouts = new Dictionary<Material, ASWToggles>();
+    ASWToggles toggles = new ASWToggles(
 		new bool[] {
 			false, // Global
 				false,
@@ -413,8 +413,8 @@ public class ASWOutlineGUI : ShaderGUI
         public static GUIContent baseText = new GUIContent("Base Texture", "[Character Indentifier]_Base");
     }
 	
-	public static Dictionary<Material, Toggles > foldouts = new Dictionary<Material, Toggles>();
-    Toggles toggles = new Toggles(
+	public static Dictionary<Material, ASWToggles > foldouts = new Dictionary<Material, ASWToggles>();
+    ASWToggles toggles = new ASWToggles(
 		new bool[] {
 			false, // Thickness
 			true,
