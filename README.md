@@ -16,7 +16,7 @@
 
 ## Dragon Ball FighterZ
 ![Goku](Previews/goku.gif)<br/>
-![Cell](Previews/cell.gif)<br/>
+![Cell](Previews/Cell.gif)<br/>
 
 ## Custom models using the shader!
 ### Tanjiro - Created from scratch by [CrypticLight https://twitter.com/TheCrypticLight](https://twitter.com/TheCrypticLight)
