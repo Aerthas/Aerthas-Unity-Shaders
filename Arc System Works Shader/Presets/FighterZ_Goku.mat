@@ -21,11 +21,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Base:
-        m_Texture: {fileID: 2800000, guid: 8e9c4f95553d58840a0c4ce3370dd2d8, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Detail:
-        m_Texture: {fileID: 2800000, guid: 16841cf94da31bd42881ceebc6962d18, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailRequiresUVtobeonasecondUVChannel:
@@ -37,7 +37,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ILM:
-        m_Texture: {fileID: 2800000, guid: 16ed13eccc15e7945a30290c509f1df7, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Metal:
@@ -49,7 +49,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SSS:
-        m_Texture: {fileID: 2800000, guid: 3a9de68ecef377c4da01f661a9e14c2d, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _texcoord:
