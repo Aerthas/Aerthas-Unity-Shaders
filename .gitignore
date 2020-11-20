@@ -7,3 +7,25 @@ Misc/Custom light example.mat
 Arc System Works Shader/FakeLightRotConverter.cs
 *.unitypackage
 Arc System Works Shader/Arc System Works - Merged Light Prism.shader
+Genshin Works Shader/Custom Functions/GColor Replacer.asset
+Genshin Works Shader/Custom Functions/GDebug.asset
+Genshin Works Shader/Custom Functions/Genshin Lighting System.asset
+Genshin Works Shader/Custom Functions/GFakeLightDir.asset
+Genshin Works Shader/Custom Functions/GFresnel System.asset
+Genshin Works Shader/Custom Functions/GMatrix Rotation.asset
+Genshin Works Shader/Custom Functions/GOutline.asset
+Genshin Works Shader/Custom Functions/GPermanent Shadows.asset
+Genshin Works Shader/Custom Functions/GReplace Color Function.asset
+Genshin Works Shader/Custom Functions/GShading System.asset
+Genshin Works Shader/Editor/GenshinShaderGUI.cs
+Genshin Works Shader/Editor/GenshinStyles.cs
+Genshin Works Shader/Editor/GenshinToggles.cs
+Genshin Works Shader/Genshin Works - Decal - Created by Silent.shader
+Genshin Works Shader/Genshin Works - Merged Light.shader
+Genshin Works Shader/Genshin Works - Outline.shader
+Genshin Works Shader/Presets/FighterZ_Cell.mat
+Genshin Works Shader/Presets/FighterZ_Goku.mat
+Genshin Works Shader/Presets/Granblue_Percival.mat
+Genshin Works Shader/Presets/Granblue_Zooey.mat
+Genshin Works Shader/Presets/GuiltyGear_Sol_Badguy.mat
+Genshin Works Shader/Resources/Paypal_Icon.png
